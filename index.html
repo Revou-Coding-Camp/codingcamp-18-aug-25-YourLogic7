@@ -29,13 +29,13 @@
         <form>
             <input type="text" id="task-input" placeholder="Add a new task" class="border p-2 rounded">
             <input type="date" id="due-date-input" class="border p-2 rounded">
-            <button type="button" onclick="validateForm();" class="bg-blue-500 text-white p-[8px] rounded">Add</button>
+            <button type="button" id="button-add" onclick="validateForm();" class="bg-blue-500 text-white p-[8px] rounded">Add</button>
         </form>
 
         <!-- Action button section -->
         <section>
-            <button class="bg-green-500 text-white p-2 rounded">Filter</button>
-            <button onclick="deleteAll()" class="bg-red-500 text-white p-2 rounded">Delete All</button>
+            <button id="button-filter" class= "bg-blue-500 text-white p-2 rounded">Filter</button>
+            <button id="button-delete" onclick="deleteAll()" class="bg-red-500 text-white p-2 rounded">Delete All</button>
         </section>
 
         <!-- List of Task -->
@@ -48,12 +48,13 @@
                 <li class="border-b py-2">Task 1</li>
                 <li class="border-b py-2">Task 2</li>
                 <li class="border-b py-2">Task 3</li>
+                <li class="border-b py-2">Task 3</li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <span>&copy; 2025 Yama Roni. All rights reserved.</span>
+        <span>&copy; 2025 Mochamad Rizky. All rights reserved.</span>
     </footer>
 
     <!-- JS External -->
