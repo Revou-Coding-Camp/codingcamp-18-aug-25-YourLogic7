@@ -15,7 +15,17 @@ function validateForm() {
     }
 }
 
-/// Rtampilkan list todo
+/// Add a new Todo
+function addTodo(task, dueDate) {
+    listTodo.push({
+        task: task,
+        dueDate: dueDate
+    });
+
+    renderTodoList();
+}
+
+/// Render the Todo List
 function renderTodoList() {
     const taskList = document.getElementById("task-list");
     taskList.innerHTML = '';
@@ -26,19 +36,7 @@ function renderTodoList() {
     }
 }
 
-/// Add a new task
-function addTodo(task, dueDate) {
-    listTodo.push({
-        task: task,
-        dueDate: dueDate
-    });
-
-    renderTodoList();
-}
-
-
-
-/// Delete
+/// Delete all Todos
 function deleteAll() {
     listTodo = [];
     renderTodoList();
