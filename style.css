@@ -45,3 +45,12 @@ footer {
     padding: 10px;
     font-size: 13px
 }
+
+#due-date-input {
+    width: 200px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+}
